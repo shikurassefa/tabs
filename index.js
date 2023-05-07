@@ -7,5 +7,5 @@ app.use(cors({ origin: "*" }));
 app.get("api/tab", (req, res) => {
   res.json(tab);
 });
-const port = 3002;
+const port = process.env.PORT || 3002;
 app.listen(port,()=>console.log('server is on port 5000'))
